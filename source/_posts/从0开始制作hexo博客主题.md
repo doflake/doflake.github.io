@@ -1,7 +1,8 @@
 ---
 title: 从0开始制作hexo博客主题
 date: 2020-10-26 20:01:32
-tags:
+c: Hexo
+name: Theme-Made-By-Myself
 ---
 
 ## 写在前面
