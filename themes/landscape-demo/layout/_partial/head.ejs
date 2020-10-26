@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">   <!-- 编码 -->
+  
+  <%- partial('google-analytics') %>
+
+  <%
+  var title = page.title;    // title : 网页标题
+  if (is_archive()){
+    title = __('archive_a');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+    // 如果当前位于 归档 
+    // 则命名为 ： Archive：年 月
+  } 
+  else if (is_category()){
+    title = __('category') + ': ' + page.category;
+    // 如果当前位于 分类 
+    // 则命名为 ： Category：分类名
+  } 
+  else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+    // 如果当前位于 标签 
+    // 则命名为 ： tag：标签名
+  }
+  %>
+
+  <title>
+    <% if (title){ %> <%= title %> | <% } %><%= config.title %>
+  </title> <!-- 执行更改标题 -->
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+
+
+  <% if (theme.rss){ %>  <!-- rss订阅 -->
+    <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
+
+
+  <% if (theme.favicon){ %>  <!-- 网页图标 -->
+    <link rel="icon" href="<%- theme.favicon %>">
+  <% } %>
+
+
+  <% if (config.highlight.enable){ %> <!-- 高亮 -->
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <% } %>
+
+  <%- css('css/style') %>
+  
+</head>
