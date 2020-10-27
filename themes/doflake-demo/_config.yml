@@ -1,0 +1,15 @@
+# Info
+title: Doflake
+author: Doflake
+
+
+# Navbar
+## menu：内部链接跳转
+menu:
+  Home: /
+  Archives: /archives
+
+## link: 外部链接跳转（打开新的窗口）
+link:
+  Github: https://github.com/doflake/
+  

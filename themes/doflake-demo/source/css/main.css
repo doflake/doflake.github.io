@@ -1,0 +1,50 @@
+/* 全局 */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+aside {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background: #262a30;
+}
+
+nav {
+    height: 70px;
+    background: #b9e1b1;
+}
+
+#content {
+    height: 100%;
+    padding-left: 280px;
+    background: #ffffff;
+}
+
+/* Navbar */
+nav #menu {
+    float: right;
+    padding-right: 20px;
+}
+
+nav ul li {
+    float: left;
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #555;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid;
+}
