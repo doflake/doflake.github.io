@@ -7,6 +7,9 @@ name: Theme-Made-By-Myself
 
 ## 写在前面
 本文将会从零开始开发一个简单的博客主题。样式主要参考 `Hexo theme` 中的 `Noise` 主题。
+
+<!-- More -->
+
 开始之前你需要了解：
 - 模板引擎 ejs官网
 - CSS预处理器
