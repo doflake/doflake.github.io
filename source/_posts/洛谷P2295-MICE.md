@@ -1,8 +1,8 @@
 ---
 title: '洛谷P2295[MICE]'
 date: 2020-10-23 18:26:55
-c: explanation
-name: Luogu-P2295-Mice
+link_c: Explanation
+link_name: Luogu-P2295-Mice
 ---
 
 
