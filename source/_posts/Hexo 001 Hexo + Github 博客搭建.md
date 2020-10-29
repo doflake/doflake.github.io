@@ -1,11 +1,9 @@
 ---
-title: hexo+github博客搭建
+title: '[Hexo] Hexo + Github 博客搭建'
 date: 2020-10-18 16:09:54
 link_c: Hexo
 link_name: Made-Hexo-Blog-From-Zero
 ---
-
-
 
 ## 准备
 

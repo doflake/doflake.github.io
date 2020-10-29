@@ -1,5 +1,5 @@
 ---
-title: 从0开始制作hexo博客主题
+title: '[Hexo] 从 0 开始制作 Hexo 博客主题'
 date: 2020-10-26 20:01:32
 link_c: Hexo
 link_name: Theme-Made-By-Myself
