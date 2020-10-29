@@ -1,6 +1,8 @@
 # Info
-main_title: Doflake
-author: Doflake
+info:
+  title: Doflake
+  author: Doflake
+  favicon: https://cdn.jsdelivr.net/gh/doflake/Picture/Favicon/1.jpg
 
 menu:
   Home: /
