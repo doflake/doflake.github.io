@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>简单侧边栏</title>
+    <title>SideBar</title>
     <style>
         *{
             margin: 0px;
-            padding: 0px;/*将默认的内外边距清除*/
+            padding: 0px; /*将默认的内外边距清除*/
         }
         .page{
             width: 100%;
@@ -17,9 +17,9 @@
             width: 150px;
             height: 204px;
             position: fixed;/*固定视图位置，保持不变*/
-            left: 0;/*左对齐*/
-            top: 50%;/*居中处理*/
-            margin-top: -102px;/*居中处理*/
+            left: 0; /*左对齐*/
+            top: 50%; /*居中处理*/
+            margin-top: -102px; /*居中处理*/
             font-family: '微软雅黑';
         }
         .list2{
@@ -35,10 +35,10 @@
         .list2 ul{
             width: 150px;
             height: auto;
-            display: none;/*将二级目录默认关闭*/
+            display: none; /*将二级目录默认关闭*/
         }
         .list2:hover ul{
-            display: block;/*当鼠标放到导航标题时显示二级目录*/
+            display: block; /*当鼠标放到导航标题时显示二级目录*/
         }
         .list2 ul li{
             width: 150px;
@@ -48,8 +48,8 @@
             text-align: center;
             line-height: 40px;
             color: #000;
-            position: relative;/*将列表位置设置继承*/
-            cursor: pointer;/*改变指针形状为可点击状态*/
+            position: relative; /*将列表位置设置继承*/
+            cursor: pointer; /*改变指针形状为可点击状态*/
         }
         .tit{
             width: 150px;
@@ -58,13 +58,13 @@
         .list3{
             width: 150px;
             height: auto;
-            position: absolute;/*三级标题位置设置为对照二级标题的绝对位置*/
+            position: absolute; /*三级标题位置设置为对照二级标题的绝对位置*/
             left: 150px;
             top: 0;
-            display: none;/*默认关闭三级标题*/
+            display: none; /*默认关闭三级标题*/
         }
         .list2 ul li:hover .list3{
-            display: block;/*开启三级标题*/
+            display: block; /*开启三级标题*/
         }
         .child{
             width: 150px;

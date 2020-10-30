@@ -4,7 +4,18 @@ info:
   author: Doflake
   favicon: https://cdn.jsdelivr.net/gh/doflake/Picture/Favicon/1.jpg
 
+# Menu
 menu:
-  Home: /
-  Archives: /archives
-  Github: https://github.com/doflake/
+  Home: 
+    name: 主页
+    link: /
+  Archives:
+    name: 归档
+    link: /archives
+  Github: 
+    name: Github
+    link: https://github.com/doflake/
+
+# Sidebar
+sidebar:
+  enable: false

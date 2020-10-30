@@ -9,10 +9,10 @@
         <%- body %>
       </main>
     </div>
-
-    <div class="sidebar">
-      <%- include('sidebar.ejs') %> 
-    </div>
-
+    <% if(theme.sidebar.enable) { %> 
+      <div class="sidebar">
+        <%- include('sidebar.ejs') %> 
+      </div>
+    <% } %> 
   </body>
 </html>
