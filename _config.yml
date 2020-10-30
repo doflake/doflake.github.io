@@ -115,3 +115,11 @@ deploy:
   type: git
   repo: https://github.com/doflake/doflake.github.io.git
   branch: master
+
+
+# Markdown-it config
+## markdown: 'zero' | 'default' | 'commonmark'
+## zero：禁用大多数解析器功能。仅支持斜体和粗体，甚至不支持所有原始Markdown功能。
+## default（GFM）：解析器的行为类似于github规范。
+## commonmark：提供比Zero预设更多的功能。 此设置将强制插件使用最新的CommonMark规范。
+markdown: commonmark

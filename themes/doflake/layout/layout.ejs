@@ -2,11 +2,17 @@
 <html>
   <%- partial('_partial/head') %>
   <body>
+
     <div class="container">
       <%- partial('_partial/header') %>
       <main class="main">
         <%- body %>
       </main>
     </div>
+
+    <div class="sidebar">
+      <%- include('sidebar.ejs') %> 
+    </div>
+
   </body>
 </html>
