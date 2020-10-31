@@ -19,3 +19,7 @@ menu:
 # Sidebar
 sidebar:
   enable: false
+  names:
+    name: 
+    link:
+    
