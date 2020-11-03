@@ -123,3 +123,18 @@ deploy:
 ## default（GFM）：解析器的行为类似于github规范。
 ## commonmark：提供比Zero预设更多的功能。 此设置将强制插件使用最新的CommonMark规范。
 markdown: commonmark
+
+# MathJax Support
+mathjax:
+  enable: true
+  per_page: false
+  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+kramed:
+  gfm: true
+  pedantic: true
+  sanitize: true
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true

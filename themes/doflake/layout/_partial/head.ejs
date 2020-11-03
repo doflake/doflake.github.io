@@ -6,5 +6,10 @@
   <% } %> 
 
   <title><%= theme.info.title %></title>
+
+  <% if (page.mathjax){ %>
+    <%- partial('mathjax') %>
+  <% } %>   
+
   <%- css('css/style.css') %>
 </head>
