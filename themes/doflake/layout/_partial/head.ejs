@@ -7,9 +7,9 @@
 
   <title><%= theme.info.title %></title>
 
-  <% if (theme.mathjax.enable){ %>
+  <% if (page.mathjax){ %>
     <%- partial('mathjax') %>
-  <% } %>   
+   <% } %>
 
   <%- css('css/style.css') %>
 </head>
