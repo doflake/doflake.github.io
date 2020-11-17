@@ -14,7 +14,7 @@ top: 10000000000000001
 
 ### 开发者
 
-&#8195;是两位学生党 Dove & Beelake 共同写的
+&#8195;是两位学生党 $Dove & Beelake$ 共同写的
 
 <img src="https://cdn.jsdelivr.net/gh/doflake/Picture/Doflake-Theme-Document/Avatar-Dove.jpg" height=200px>
 
