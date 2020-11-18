@@ -4,6 +4,7 @@ date: 2020-10-26 20:01:32
 link_c: Hexo
 link_name: Theme-Made-By-Myself
 top: 2002
+mathjax: true
 ---
 
 ## 写在前面
