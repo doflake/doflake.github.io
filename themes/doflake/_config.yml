@@ -16,12 +16,11 @@ menu:
     name: Github
     link: https://github.com/doflake/
 
-# Sidebar
-sidebar:
-  enable: false
-  names:
-    name: 
-    link:
+# Background
+background:
+  enable: true
+  link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/2.jpg
+  
 
 # Mathjax
 ## Using:
