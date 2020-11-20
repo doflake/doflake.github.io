@@ -4,6 +4,7 @@ date: 2020-10-18 16:09:54
 link_c: Hexo
 link_name: Made-Hexo-Blog-From-Zero
 top: 2001
+mathjax: true
 ---
 
 ## 准备
@@ -69,11 +70,11 @@ hexo g
 hexo server
 ```
 
-​打开 [localhost:400](localhost:4000) 查看
+​打开 [localhost:4000](localhost:4000) 查看
 
 ## 网上建立
 ​首先，你先要有一个GitHub账户，去注册一个吧。注册完登录后，在`GitHub.com`中看到一个`New repository`，新建仓库。
-​创建一个和你用户名相同的仓库，[后面加.github.io](http://xn--yfr16an19l.github.io/)，只有这样，将来要部署到GitHub page的时候，才会被识别，[也就是xxxx.github.io](http://xn--xxxx-4m5f354ev5p.github.io/)，其中xxx就是你注册GitHub的用户名。我这里是已经建过了。
+​创建一个和你用户名相同的仓库，[后面加.github.io](http://XXX.github.io/)，只有这样，将来要部署到GitHub page的时候，才会被识别，[也就是xxxx.github.io](http://XXX.github.io/)，其中xxx就是你注册GitHub的用户名。我这里是已经建过了。
 ​回到你的git bash中，
 
 ```
