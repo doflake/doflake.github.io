@@ -1,15 +1,24 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <% if (theme.info.favicon){ %>
-   <link rel="icon" href="<%- theme.info.favicon %> "> 
-  <% } %> 
+  
+  <div class="theme-basic">
 
-  <title><%= theme.info.title %></title>
+    <div class="theme-basic-favicon">
+      <% if (theme.basic.info.favicon){ %>
+        <link rel="icon" href="<%- theme.basic.info.favicon %>"> 
+       <% } %> 
+    </div>
 
-  <% if (page.mathjax){ %>
-    <%- partial('mathjax') %>
-   <% } %>
-
+    <div class="theme-basic-title">
+      <title><%= theme.basic.info.title %></title>
+    </div>
+    
+    <div class="theme-basic-mathjax">
+       <% if (theme.basic.mathjax.enbale){ %>
+         <%- partial('mathjax') %>
+       <% } %>
+    </div>
+  </div>
   <%- css('css/style.css') %>
 </head>

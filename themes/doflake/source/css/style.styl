@@ -1,16 +1,9 @@
-$background_link = hexo-config("background.link")
-body {
-    background-image: url($background_link);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
+@import "_basic/background";
 @import "_partial/header";
 @import "_partial/post";
 @import "_partial/archive";
