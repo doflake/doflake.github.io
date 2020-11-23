@@ -29,6 +29,12 @@
 basic:
   
 ## Info 基本信息
+# ************************************************************
+# info:
+#  title:                   |   网页标题
+#  author:                  |   第一篇文章上方的文字
+#  favicon:                 |   网页图标 
+# ************************************************************
   info:
    title: Doflake
    author: Doflake
@@ -54,7 +60,12 @@ basic:
 
 
 ## Background 背景图
- background:
+# ************************************************************
+# background:
+#   enable:                 |   是否使用背景图
+#   link:                   |   图片链接
+# ************************************************************
+  background:
    enable: true
    link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/2.jpg
 
