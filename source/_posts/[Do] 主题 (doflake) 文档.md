@@ -7,68 +7,47 @@ top: 9
 mathjax: true
 ---
 
-介绍 **主题简介 | 食用方式 | 更新日志**
+介绍 **主题简介 | 主题食用 | 更新日志**
 
 <!--more-->
 
 ## 主题简介
 
-### 开发者
+### 主题名
 
-&#8195;是两位学生党 $Dove~~/~~Beelake$ 共同写的
+&#8195;名称：$Doflake$
 
-<img src="https://cdn.jsdelivr.net/gh/doflake/Picture/Doflake-Theme-Document/Avatar-Dove.jpg" height=200px>
+&#8195;来源：$[元祖]Dove$与$[元祖]Beelake$ 名字合成 $(Dof~/~Lake)$
 
-<img src="https://cdn.jsdelivr.net/gh/doflake/Picture/Doflake-Theme-Document/Avatar-Beelake.jpg" height=200px>
+### 开发人员
 
-&#8195;小小的吐槽一句 ($Beelake$ 是 比 $Dove$ 还要 $Dove$ 的 鸽子精)
+1.  $[元祖]Dove~:$  主题相关内容 (文档 , 功能 , 样式 , 布局) 
+2. $[元祖]Beelake~:$  部分文章 , 查询资料 , 找新功能
 
-![LazyLake](https://cdn.jsdelivr.net/gh/doflake/Picture/Doflake-Theme-Document/LazyLake.png)
+### 其他
 
-### 关于主题名
+&#8195;- 感谢支持
 
-&#8195;显然易见的嘛, $dof$ 读起来像 $dove$ 而 $lake$ 则是 $Beelake$ 的简称
+&#8195;- 如果有好的[提议](https://github.com/doflake/doflake.github.io/issues)，$Doflake$ 都会听的 😝
 
-&#8195;所以又叫 鸽子湖 <font size=1 color=grey>(经常咕咕的)</font>
+## 主题食用
 
-### 关于主题内容
+### Basic Settings 基础设置
 
-&#8195;虽然经常咕咕, 但是内容还是 $DIY$ 的噻 <font size=1 color=grey>(指对着网上的代码,CHAO下来的)</font>
+#### &#8195;Info 基本信息
 
-&#8195;目前功能少的一批, 但是还是会坚持做的蛤
+|   属性    |        作用        |   内容   |
+| :-------: | :----------------: | :------: |
+|  $title$  |      网页名称      |   任意   |
+| $favicon$ |      网页图标      | 图片链接 |
+| $author$  | 第一篇文章上方文字 |   任意   |
 
-### 关于主题下载
+#### &#8195;Menu 导航栏
 
-&#8195;由于小的很, 所以在 [$Hexo/Theme$](http://hexo.io/themes) 并不存在
+&#8195; **位置：** 第一篇文章上方偏右
 
-&#8195;目前唯一下载的途径, 戳 [我](https://github.com/doflake/Hexo-Theme-Doflake) 
-
-## 食用方式
-
-### 网站信息 $(Info)$
-
-```yml
-info:
-  title:       # 网页标题 
-  author:      # 作者 (显示于文章顶端靠左部分) 
-  favicon:     # 网页图标 
-```
-
-### 菜单 $(Menu)$
-
-&#8195; 菜单显示位于文章顶端靠右部分
-
-```yml
-menu:
-  Home: 
-    name: 主页
-    link: /
-  Archives:
-    name: 归档
-    link: /archives
-  Github: 
-    name: Github
-    link: https://github.com/doflake/
-
-```
+|  属性  |    作用    |   内容   |
+| :----: | :--------: | :------: |
+| $name$ | 显示的文字 |   任意   |
+| $link$ |   超链接   | 地址链接 |
 
