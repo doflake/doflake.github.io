@@ -76,7 +76,7 @@ basic:
 #   安装 kramed 渲染器 npm install hexo-renderer-kramed --save
 # ************************************************************
   mathjax:
-    enable: true
+   enable: true
 
 # -------------------------------------------------------------------------------------------------- < End Basic Setting >
 

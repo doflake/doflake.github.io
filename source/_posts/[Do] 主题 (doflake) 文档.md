@@ -41,7 +41,7 @@ mathjax: true
 
 &#8195;由于小的很, 所以在 [$Hexo/Theme$](http://hexo.io/themes) 并不存在
 
-&#8195;唯一下载的途径, 先戳 [我](https://github.com/doflake/doflake.github.io) 选择 $Hexo$ 分支, 然后 $Download$ 安装包
+&#8195;目前唯一下载的途径, 戳 [我](https://github.com/doflake/Hexo-Theme-Doflake) 
 
 ## 食用方式
 
