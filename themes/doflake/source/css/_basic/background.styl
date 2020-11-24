@@ -1,10 +1,4 @@
 $background_link = hexo-config("basic.background.link")
-$background_repeat = convert(hexo-config("attribute.background.repeat"))
-$background_attachment = convert(hexo-config("attribute.background.attachment"))
-$background_size = convert(hexo-config("attribute.background.size"))
 body {
     background-image: url($background_link);
-    background-repeat: $background_repeat;
-    background-attachment: $background_attachment;
-    background-size: $background_size;
 }
