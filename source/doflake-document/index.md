@@ -1,13 +1,6 @@
 ---
-title: '[Do] 主题 (doflake) 文档'
-date: 2020-11-09 20:23:09
-link_c: Do
-link_name: Doflake-Theme-Document
-top: 9
-mathjax: true
-author:
- - name: Dove
- - avatar: https://cdn.jsdelivr.net/gh/dove1242/picture/avatar/avatar.jpg
+title: '[doflake]document'
+date: 2020-11-27 23:35:17
 ---
 
 介绍 **主题简介 | 主题食用 | 更新日志**
@@ -25,7 +18,7 @@ author:
 ### 开发人员
 
 1.  $[元祖]Dove~:$  主题相关内容 (文档 , 功能 , 样式 , 布局) 
-2. $[元祖]Beelake~:$  部分文章 , 查询资料 , 找新功能
+2.  $[元祖]Beelake~:$  部分文章 , 查询资料 , 找新功能
 
 ### 其他
 
@@ -193,4 +186,3 @@ $background - size$
 - 添加功能 $Mathjax$ 渲染公式
 - 添加功能 $Background$ 背景图
 - 添加功能 $Menu$ 导航栏
-

@@ -51,9 +51,12 @@ basic:
    Home: 
      name: 主页
      link: /
+   Document:
+     name: 主题文档
+     link: /doflake-document/
    Archives:
      name: 归档
-     link: /archives
+     link: /archives/
    Github: 
      name: Github
      link: https://github.com/doflake/
@@ -73,6 +76,7 @@ basic:
 # 使用:
 #   移除 marked 渲染器 npm uninstall hexo-renderer-marked --save
 #   安装 kramed 渲染器 npm install hexo-renderer-kramed --save
+# Attention : 开启后默认为所有公式全部渲染 (包括 标题 等)
 # **************************|*********************************
   mathjax:
    enable: true
@@ -112,4 +116,4 @@ layout:
     repeat: no-repeat
     attachment: fixed
     size: auto auto
-    
+# -------------------------------------------------------------------------------------------------- < End Layout >
