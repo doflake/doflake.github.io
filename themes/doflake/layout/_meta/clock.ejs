@@ -1,13 +1,10 @@
 <style>
     .words{
-        position: fixed;
-        right: 10px;
-        top: 20px;
 
         font-size: 50px;
         font-weight: bold;
         text-transform: uppercase;
-        fill: none;
+        fill: rgba(255,255,255,0.5);
         stroke-width: 3px;
         stroke-dasharray: 35,125;
         animation-name: drawing;
@@ -17,22 +14,22 @@
     }
     .words-1{
         stroke: deepskyblue;
-        text-shadow: 0 0 15px deepskyblue;
+        /* text-shadow: 0 0 10px deepskyblue; */
         animation-delay: -1.5s;
     }
     .words-2{
         stroke: lightseagreen;
-        text-shadow: 0 0 15px lightseagreen;
+        /* text-shadow: 0 0 10px lightseagreen; */
         animation-delay: -3s;
     }
     .words-3{
-        stroke: orange;
-        text-shadow: 0 0 15px orange;
+        stroke: rgb(216, 237, 29);
+        /* text-shadow: 0 0 10px rgb(216, 237, 29); */
         animation-delay: -4.5s;
     }
     .words-4{
         stroke: purple;
-        text-shadow: 0 0 15px purple;
+        /* text-shadow: 0 0 10px purple; */
         animation-delay: -6s;
     }
     @keyframes drawing {
@@ -40,8 +37,15 @@
             stroke-dashoffset: -160
         }
     }
+
+    .theme-meta-clock {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+
 </style>
-<div>
+<div class="theme-meta-clock">
     <svg>
         <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
         <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
