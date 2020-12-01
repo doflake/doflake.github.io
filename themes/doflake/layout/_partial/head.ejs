@@ -20,16 +20,18 @@
   
   <div class="theme-meta">
 
-    <div class="theme-meta-clock">
-      <%- partial('_meta/clock') %> 
-    </div>
-
     <div class="theme-meta-totop">
       <% if (theme.meta.totop.enable) { %>
         <%- partial('_meta/totop') %>
       <% } %>  
     </div>
 
+    <div class="theme-meta-clock">
+      <% if (theme.meta.clock.enable) { %> 
+        <%- partial('_meta/clock') %> 
+      <% } %> 
+    </div>
+    
   </div>
   <%- css('css/style.css') %>
 </head>

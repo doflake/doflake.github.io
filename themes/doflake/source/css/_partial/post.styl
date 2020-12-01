@@ -1,4 +1,7 @@
-$post_border_radius = convert(hexo-config("layout.index_post.radius"))
+$post_border_radius = convert(hexo-config("layout.index_post.border.radius"))
+$post_margin_first_to_nav = convert(hexo-config("layout.index_post.margin.first_to_nav"))
+$post_post_title_color = convert(hexo-config("layout.index_post.posts.title_color"))
+$post_post_content_link_color = convert(hexo-config("layout.index_post.posts.content_link_color"))
 .post {
   margin: 1em auto;
   padding: 30px 50px;
@@ -10,21 +13,21 @@ $post_border_radius = convert(hexo-config("layout.index_post.radius"))
 
 .posts  {
   .post:first-child {
-    margin-top: 0;
+    margin-top: $post_margin_first_to_nav;
   }
 
   .post-title {
     font-size: 1.5em;
 
     .post-title-link {
-      color: #368CCB;
+      color:  $post_post_title_color;
       text-decoration: none;
     }
   }
 
   .post-content {
     a {
-      color: #368CCB;
+      color: $post_post_content_link_color;
       text-decoration: none;
     }
   }

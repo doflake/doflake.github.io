@@ -65,11 +65,19 @@ basic:
 ## Background 背景图
 # **************************|*********************************
 # background:               |
-#   enable:                 |   是否使用背景图
 #   link:                   |   图片链接
+#   layout:                 |   样式
+#     repeat:               |   是否重复
+#     attachment:           |   固定 或 随滚动移动
+#     size:                 |   图片大小
 # **************************|*********************************
   background:
    link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/2.jpg
+   layout:
+     repeat: no-repeat
+     attachment: fixed
+     size: auto auto
+
 
 ## Mathjax 渲染公式
 # **************************|*********************************
@@ -91,32 +99,35 @@ layout:
 ## Index_post 主页文章块
 # **************************|*********************************
 # index_post:               |   文章方框
-#   max_width:              |   最大宽度 
-#   left:                   |   左边距
-#   top:                    |   上边距
-#   right:                  |   右边距
-#   bottom:                 |   下边距
-#   radius:                 |   文章圆角
+#   container:              |   文章块
+#     max_width:            |   最大宽度 
+#     left:                 |   左边距
+#     top:                  |   上边距
+#     right:                |   右边距
+#     bottom:               |   下边距
+#   border:                 |   边框样式
+#     radius:               |   文章圆角
+#   margin:                 |   边距
+#     first_to_nav:         |   第一篇文章 到 导航栏 的距离
+#   posts:                  |   文章内容
+#     title_color:          |   标题颜色
+#     content_link_color:   |   文章内容中链接颜色 
 # **************************|*********************************
   index_post:
-    max_width: 960px
-    left: 100px
-    top: auto
-    right: auto
-    bottom: auto
-    radius: 10px
-
-## Background 背景图
-# **************************|*********************************
-# background:               |   背景图片
-#   repeat:                 |   是否重复
-#   attachment:             |   固定 或 随滚动移动
-#   size:                   |   图片大小
-# **************************|*********************************
-  background:
-    repeat: no-repeat
-    attachment: fixed
-    size: auto auto
+    container:
+      max_width: 960px
+      left: 100px
+      top: auto
+      right: auto
+      bottom: auto
+    border:
+      radius: 10px
+    margin:
+      first_to_nav: 5px
+    posts:
+      title_color: "#5C6FDA"
+      content_link_color: "#1198B6"
+    
 # -------------------------------------------------------------------------------------------------- < End Layout >
 
 ####################################################################################################
@@ -134,11 +145,20 @@ meta:
 
 ## Clock 时钟
 # **************************|*********************************  
-#
-#
-#
+# clock:                    |   霓虹灯 时钟
+#   enable:                 |   是否启用
+#   layout:                 |   样式
+#     size:                 |   时钟 大小
+#     fill:                 |   时钟 字体颜色
+#     stroke_width:         |   霓虹灯带 宽度
+#     time:                 |   霓虹灯带 走完一次时长
 # **************************|*********************************  
   clock:
-    enable:
+    enable: true
+    layout:
+      size: 45px
+      fill: "#000000"
+      stroke_width: 3px
+      time: 8
     
 # -------------------------------------------------------------------------------------------------- < End Meta >
