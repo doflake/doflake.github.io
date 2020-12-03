@@ -13,7 +13,7 @@
 #   主题博客 : https://doflake.github.io/
 #     注释 : 主题博客 不止有 主题相关内容 还有 Doflake 的其他文章 
 #            主题相关内容 均在 主题文档 中
-#   主题文档 : https://doflake.github.io/Do/Doflake-Theme-Document/
+#   主题文档 : https://doflake.github.io/doflake-document/
 #     注释 : 包含 "主题简介" "主题下载" "主题食用" "主题发展史" 等内容 
 #
 # 其他
@@ -160,5 +160,5 @@ meta:
       fill: "#000000"
       stroke_width: 3px
       time: 8
-    
+
 # -------------------------------------------------------------------------------------------------- < End Meta >
