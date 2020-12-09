@@ -2,15 +2,18 @@ $post_border_radius = convert(hexo-config("layout.index_post.border.radius"))
 $post_margin_first_to_nav = convert(hexo-config("layout.index_post.margin.first_to_nav"))
 $post_post_title_color = convert(hexo-config("layout.index_post.posts.title_color"))
 $post_post_content_link_color = convert(hexo-config("layout.index_post.posts.content_link_color"))
+$post_post_container_color_default = convert(hexo-config("layout.index_post.container.color.default"))
+$post_post_container_color_hover = convert(hexo-config("layout.index_post.container.color.hover"))
+
+
 .post {
   margin: 1em auto;
   padding: 30px 50px;
-  background: rgba(245,245,255,0.93);
+  background-color: rgba($post_post_container_color_default);
   border: 1px solid #ddd;
   box-shadow: 3px 3px 7px #252525;
   border-radius: $post_border_radius;
 }
-
 .posts  {
   .post:first-child {
     margin-top: $post_margin_first_to_nav;
@@ -31,8 +34,9 @@ $post_post_content_link_color = convert(hexo-config("layout.index_post.posts.con
       text-decoration: none;
     }
   }
-
-  .post-meta {
-    color: #BABABA;
+  .post:hover {
+    background-color: rgba($post_post_container_color_hover);
   }
 }
+
+

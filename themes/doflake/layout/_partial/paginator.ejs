@@ -1,8 +1,19 @@
-<% if (page.total > 1){ %>
-  <nav class="page-nav">
-    <%- paginator({
-      prev_text: "&laquo;" + __('Paginator.Prev'),
-      next_text: __('Paginator.Next') + "&raquo;"
-    }) %>
-  </nav>
+<% if (page.total > 1) { %>
+  <div class="paginator">
+    <% if (page.prev != 0) { %>
+      <a class="paginator-prev" rel="prev" href="<%= url_for(page.prev_link) %>">
+        <section class="paginator-prev-section">
+          <i class="paginator-prev-a">上一页</i>
+        </section>
+      </a>
+    <% } %> 
+    
+    <% if (page.next != 0) { %>
+      <a class="paginator-next" rel="next" href="<%= url_for(page.next_link) %>">
+        <section class="paginator-next-section">
+          <i class="paginator-next-a">下一页</i>
+        </section>
+      </a>
+    <% } %> 
+  </div>
 <% } %>
