@@ -1,5 +1,6 @@
 <% if (page.total > 1) { %>
   <div class="paginator">
+    
     <% if (page.prev != 0) { %>
       <a class="paginator-prev" rel="prev" href="<%= url_for(page.prev_link) %>">
         <section class="paginator-prev-section">
@@ -7,6 +8,9 @@
         </section>
       </a>
     <% } %> 
+    
+
+
     
     <% if (page.next != 0) { %>
       <a class="paginator-next" rel="next" href="<%= url_for(page.next_link) %>">

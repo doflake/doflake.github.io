@@ -13,6 +13,10 @@ $post_post_container_color_hover = convert(hexo-config("layout.index_post.contai
   border: 1px solid #ddd;
   box-shadow: 3px 3px 7px #252525;
   border-radius: $post_border_radius;
+
+  transform-origin: center top;
+  transition: opacity 0.3s ease-out 0s, transform 0.3s ease-out 0s; opacity: 1;
+
 }
 .posts  {
   .post:first-child {
