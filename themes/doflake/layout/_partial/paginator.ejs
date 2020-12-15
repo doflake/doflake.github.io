@@ -1,23 +1,26 @@
 <% if (page.total > 1) { %>
   <div class="paginator">
-    
-    <% if (page.prev != 0) { %>
-      <a class="paginator-prev" rel="prev" href="<%= url_for(page.prev_link) %>">
-        <section class="paginator-prev-section">
-          <i class="paginator-prev-a">上一页</i>
-        </section>
-      </a>
-    <% } %> 
-    
 
 
-    
-    <% if (page.next != 0) { %>
-      <a class="paginator-next" rel="next" href="<%= url_for(page.next_link) %>">
-        <section class="paginator-next-section">
-          <i class="paginator-next-a">下一页</i>
-        </section>
-      </a>
-    <% } %> 
+    <a class="paginator-prev" rel="prev" href="<%= url_for(page.prev_link) %>">
+      <section class="paginator-prev-section">
+        <% if (page.prev == 0) { %>
+          <span class="paginator-prev-fa-no"></span>
+        <% } else { %>  
+          <span class="paginator-prev-fa fa fa-chevron-left"></span>
+        <% } %> 
+      </section>
+    </a>
+
+    <a class="paginator-next" rel="next" href="<%= url_for(page.next_link) %>">
+      <section class="paginator-next-section">
+        <% if (page.next == 0) { %>
+          <span class="paginator-next-fa-no"></span>
+        <% } else { %>  
+          <span class="paginator-next-fa fa fa-chevron-right"></span>
+        <% } %> 
+      </section>
+    </a>
+
   </div>
 <% } %>
