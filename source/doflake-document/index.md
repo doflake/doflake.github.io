@@ -167,8 +167,10 @@ mathjax:
 
 **主要内容：**
 
--  添加 $霓虹灯Clock$ 
+-  添加 霓虹灯 $Clock$ 
 -  主页文章链接样式
+-  添加 $FontAwesome~Icon$
+-  修改分页器 $Paginator$
 
 
 
