@@ -12,6 +12,12 @@
       </section>
     </a>
 
+    <a class="paginator-current" rel="current" href="<%= url_for(page.current_url) %>">
+      <section class="paginator-current-text">
+        <span class="paginator-current-text"><%= page.current %></span>
+      </section>
+    </a>
+
     <a class="paginator-next" rel="next" href="<%= url_for(page.next_link) %>">
       <section class="paginator-next-section">
         <% if (page.next == 0) { %>

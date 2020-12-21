@@ -163,7 +163,7 @@ mathjax:
 
 **时间：** $Day 12.02$
 
-**注释：** 框架改动，添加 $Meta$
+**注释：** 框架改动，添加 $Meta$，添加支持 $FontAwesome~Icon$，修改 $Partial$
 
 **主要内容：**
 
