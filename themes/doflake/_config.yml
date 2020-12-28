@@ -60,6 +60,9 @@ basic:
    Github: 
      name: Github
      link: https://github.com/doflake/
+   FunnyBaidu:
+     name: 度娘
+     link: /Funny-Baidu
 
 
 ## Background 背景图
@@ -72,11 +75,11 @@ basic:
 #     size:                 |   图片大小
 # **************************|*********************************
   background:
-   link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/3.jpg
+   link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/4.png
    layout:
      repeat: no-repeat
      attachment: fixed
-     size: auto auto
+     size: 100% 100%
 
 
 ## Mathjax 渲染公式
