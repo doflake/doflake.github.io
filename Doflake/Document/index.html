@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/font\font-awesome-4.7.0\css\font-awesome.min.css">
+  <head><meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/doflake/Picture/Favicon/1.jpg">
+
+<div class="doflake">
+  
+  <div class="theme-basic">
+    <div class="theme-basic-title">
+      <title>Doflake</title>
+    </div>   
+    <div class="theme-basic-mathjax">
+        
+          <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.0/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+        
+    </div> 
+  </div>
+
+  <div class="theme-meta">
+    <div class="theme-meta-totop">
+      
+        <script src="/js/totop.js"></script>
+<script src="/js/jquery.min.js"></script>
+<style>
+    #totop{
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    width: 0;
+    height: 0;
+    display: none;
+    }
+</style>
+<div id="totop">
+    <a title="Back To Top"><img src="https://cdn.jsdelivr.net/gh/doflake/Picture/ToTop/ScrollTop.png"/></a>
+</div>
+        
+    </div>
+    <div class="theme-meta-clock">
+       
+        <div class="theme-meta-clock">
+    <svg>
+        <text id="time" text-anchor="middle" x="36%" y="60%" class="clock_words clock_words-1"></text>
+        <text id="time" text-anchor="middle" x="36%" y="60%" class="clock_words clock_words-2"></text>
+    </svg>
+</div>
+
+<script>
+function showtime(){
+    var noatime = new Date();
+    var h = noatime.getHours(),
+        m = noatime.getMinutes(),
+        s = noatime.getSeconds();
+    h=checktime(h);
+    m=checktime(m);
+    s=checktime(s);
+  return h+":"+m+":"+s;
+}
+
+function checktime(x){
+  if(x<10){
+    x="0"+x;
+  }
+  return x;
+}
+
+var div1=document.getElementsByTagName("text");
+setInterval(function(){
+  for (var i in div1){
+      div1[i].innerHTML=showtime();
+  }
+},1000);
+</script> 
+       
+    </div> 
+  </div>
+
+  <div class="theme-css">
+    
+<link rel="stylesheet" href="/css/style.css">
+
+  </div>
+
+</div><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Doflake" type="application/atom+xml">
+</head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <article class="post">
+  <script src="/js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <div class="post-title">
+    <center><p class="post-title-link post-title-size">【Doflake】 主题文档</p></center>
+  </div>
+  <div class="post-content">
+    
+  </div>
+  
+</article>
+      </main>
+    </div>
+  </body>
+</html>
