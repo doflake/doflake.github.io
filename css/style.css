@@ -208,42 +208,17 @@ table td.code {
 .header .menu .menu-item-link:hover {
   color: #368ccb;
 }
-.post {
-  background-color: #0c0c0c;
-  padding: 10px 30px;
-}
-.post .post-title {
-  font-size: 1.5em;
-  padding-top: 10px;
-  padding-left: 20px;
-}
-.post .post-title .post-title-link {
-  color: #5c6fda;
-  text-decoration: none;
-}
-.post .post-content {
-  padding-left: 20px;
-}
-.post .post-content p {
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-}
 .post-index {
-  max-width: 960px;
-  margin-left: 100px;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin: 1em auto;
-  background-color: #0c0c0c;
-  box-shadow: 3px 3px 7px #252525;
-  border-radius: 0px;
+  padding-top: 40px;
+  padding-left: 1vw;
 }
-.posts .post:first-child {
-  margin-top: 5px;
+.posts .post-index-container {
+  max-width: 60vw;
+  margin: 50px;
+  background-color: #fff5f9;
 }
-.posts .post-banner {
-  border: 2px solid #252525;
+.posts .post-index-banner {
+  border-bottom: 5px solid #252525;
   height: 250px;
   background-size: cover;
   overflow: hidden;
@@ -252,10 +227,29 @@ table td.code {
   font-size: 1.5em;
   padding-top: 10px;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 .posts .post-title .post-title-link {
-  color: #5c6fda;
   text-decoration: none;
+  position: relative;
+  color: #ec87e4;
+  font-weight: bold;
+  text-decoration: none;
+}
+.posts .post-title .post-title-link:before {
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: -2px;
+  display: block;
+  height: 2px;
+  background-color: #ec87e4;
+  content: '';
+}
+.posts .post-title .post-title-link:hover:before {
+  right: 0;
+  left: 0;
 }
 .posts .post-title .post-title-size {
   font-size: 1em;
@@ -267,11 +261,7 @@ table td.code {
   padding-bottom: 20px;
 }
 .posts .post-content p {
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-}
-.posts .post:hover {
-  background-color: #0c0c0c;
+  color: #fff;
 }
 .archive {
   margin: 1em auto;
@@ -343,4 +333,5 @@ table td.code {
 }
 body {
   margin: 0px;
+  background-color: #cbccff;
 }
