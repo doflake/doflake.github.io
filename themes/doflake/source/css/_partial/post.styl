@@ -5,38 +5,83 @@ $post_post_content_link_color = convert(hexo-config("layout.index_post.posts.con
 $post_post_container_color_default = convert(hexo-config("layout.index_post.container.color.default"))
 $post_post_container_color_hover = convert(hexo-config("layout.index_post.container.color.hover"))
 
+$max_width = convert(hexo-config("layout.index_post.container.max_width"))
+$margin_left = convert(hexo-config("layout.index_post.container.left"))
+$margin_right = convert(hexo-config("layout.index_post.container.right"))
+$margin_top = convert(hexo-config("layout.index_post.container.top"))
+$margin_bottom = convert(hexo-config("layout.index_post.container.bottom"))
 
 .post {
-  margin: 1em auto;
-  padding: 30px 50px;
   background-color: rgba($post_post_container_color_default);
-  border: 1px solid #ddd;
-  box-shadow: 3px 3px 7px #252525;
-  border-radius: $post_border_radius;
-
-  transform-origin: center top;
-  transition: opacity 0.3s ease-out 0s, transform 0.3s; opacity: 1;
-  //opacity: 0; transform: scale(0.8); 
-}
-.posts  {
-  .post:first-child {
-    margin-top: $post_margin_first_to_nav;
-  }
-
+  padding: 10px 30px;
   .post-title {
     font-size: 1.5em;
+    padding-top: 10px;
+    padding-left: 20px;
     .post-title-link {
       color:  $post_post_title_color;
       text-decoration: none;
     }
   }
-
+    
   .post-content {
-    a {
-      color: $post_post_content_link_color;
+    padding-left: 20px;
+    p {
+      color: rgba($post_post_content_link_color);
       text-decoration: none;
     }
   }
+}
+.post-index
+{
+  max-width: $max_width;
+  margin-left: $margin_left;
+  margin-right: $margin_right;
+  margin-top: $margin_top;
+  margin-bottom: $margin_bottom;
+  
+  margin: 1em auto;
+  background-color: rgba($post_post_container_color_default);
+  box-shadow: 3px 3px 7px #252525;
+  border-radius: $post_border_radius;
+}
+
+.posts  {
+  .post:first-child {
+    margin-top: $post_margin_first_to_nav;
+  }
+  .post-banner {
+      border: 2px solid #252525;
+      height: 250px;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+  .post-title {
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-left: 20px;
+    .post-title-link {
+      color:  $post_post_title_color;
+      text-decoration: none;
+    }
+    .post-title-size {
+      font-size: 1em;
+        
+    }
+  }
+    
+  .post-content {
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    p {
+      color: rgba($post_post_content_link_color);
+      text-decoration: none;
+    }
+  }
+
   .post:hover {
     background-color: rgba($post_post_container_color_hover);
   }

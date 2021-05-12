@@ -33,16 +33,28 @@ basic:
 # info:                     |
 #  title:                   |   网页标题
 #  favicon:                 |   网页图标 
-#  author:                  |   第一篇文章上方的文字
 # **************************|*********************************
   info:
    title: Doflake
    favicon: https://cdn.jsdelivr.net/gh/doflake/Picture/Favicon/1.jpg
-   author: Doflake
 
+## Card 首页卡片
+# **************************|*********************************
+# card:                     |
+#   title:                  |    卡片标题
+#   image:                  |    卡片图片
+#   background-color:       |    背景颜色
+#   text-color:             |    标题颜色
+# **************************|*********************************
+  card:
+    title: 「 Doflake 」
+    image: https://cdn.jsdelivr.net/gh/doflake/Picture/Card/Avatar-Dove.jpg
+    background-color: 0,0,0
+    text-color: 255,0,255
+    
 ## Menu 导航栏
 # **************************|*********************************
-# Example:                  |
+# menu:                     |
 #   [AA]:                   |   导航栏中组件名称
 #     name:                 |   内容
 #     link:                 |   跳转链接  
@@ -75,7 +87,7 @@ basic:
 #     size:                 |   图片大小
 # **************************|*********************************
   background:
-   link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/4.png
+   link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/1.png
    layout:
      repeat: no-repeat
      attachment: fixed
@@ -125,15 +137,16 @@ layout:
       right: auto
       bottom: auto
       color: 
-        default: 255,255,255,0.8
-        hover: 255,255,255,0.9
+        default: 12,12,12,9.5
+        hover: 12,12,12,1.0
     border:
-      radius: 10px
+      radius: 0px
     margin:
       first_to_nav: 5px
     posts:
       title_color: "#5C6FDA"
-      content_link_color: "#1198B6"
+      content_link_color: 255,255,255,0.7
+      
     
 # -------------------------------------------------------------------------------------------------- < End Layout >
 
