@@ -4,7 +4,7 @@
   justify-content: center;
   height: 100vh;
   max-width: 100%;
-  background-color: #779dc1;
+  background-color: #000;
   background-size: cover;
   align-items: center;
   overflow: hidden;
@@ -66,8 +66,9 @@
 .card-title {
   opacity: 0;
   font: 900 50px '';
+  font-family: "Consolas";
   letter-spacing: 10px;
-  color: #3c3c46;
+  color: #f0f;
   transition: 0.5s;
 }
 .card:hover .card-part-1 {
@@ -84,6 +85,20 @@
 }
 .card:hover .card-title {
   opacity: 1;
+}
+.card-cover-1 {
+  position: absolute;
+  top: 0px;
+  width: 10000px;
+  height: 20px;
+  background-color: rgba(255,0,255,0.5);
+}
+.card-cover-2 {
+  position: absolute;
+  bottom: 0px;
+  width: 10000px;
+  height: 20px;
+  background-color: rgba(255,0,255,0.5);
 }
 table {
   width: 100%;
