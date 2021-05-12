@@ -52,6 +52,9 @@ basic:
     background-color: 0,0,0
     text-color: 255,0,255
     
+  body:
+    background-color: "#CBCCFF"
+       
 ## Menu 导航栏
 # **************************|*********************************
 # menu:                     |
@@ -124,28 +127,41 @@ layout:
 #   border:                 |   边框样式
 #     radius:               |   文章圆角
 #   margin:                 |   边距
-#     first_to_nav:         |   第一篇文章 到 导航栏 的距离
+#     first_to_card:         |   第一篇文章 到 Card 的距离
 #   posts:                  |   文章内容
 #     title_color:          |   标题颜色
 #     content_link_color:   |   文章内容中链接颜色 
 # **************************|*********************************
-  index_post:
-    container:
-      max_width: 960px
-      left: 100px
-      top: auto
-      right: auto
-      bottom: auto
-      color: 
-        default: 12,12,12,9.5
-        hover: 12,12,12,1.0
-    border:
-      radius: 0px
-    margin:
-      first_to_nav: 5px
-    posts:
-      title_color: "#5C6FDA"
-      content_link_color: 255,255,255,0.7
+  # index_post:
+  #   container:
+  #     max_width: 960px
+  #     left: 100px
+  #     top: auto
+  #     right: auto
+  #     bottom: auto
+  #     color: 
+  #       default: 12,12,12,9.5
+  #       hover: 12,12,12,1.0
+  #   border:
+  #     radius: 0px
+  #   margin:
+  #     first_to_card: 5px
+  #   posts:
+  #     title_color: "#5C6FDA"
+  #     content_link_color: 255,255,255,0.7
+
+    index_post:
+      container:
+        left: 1vw
+        top: 40px
+        max-width: 60vw
+        background-color: "#FFF5F9"
+      title:
+        color: "#EC87E4"
+        underline:
+          under: -2px
+          time: 0.4s
+          height: 2px
       
     
 # -------------------------------------------------------------------------------------------------- < End Layout >
