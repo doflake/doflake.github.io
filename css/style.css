@@ -216,6 +216,11 @@ table td.code {
   max-width: 60vw;
   margin: 50px;
   background-color: #fff5f9;
+  box-shadow: 0 0 3px 1px rgba(51,51,51,0.5);
+  transition: 0.3s;
+}
+.posts .post-index-container:hover {
+  box-shadow: 0 3px 15px 3px rgba(51,51,51,0.5);
 }
 .posts .post-index-banner {
   border-bottom: 5px solid #252525;
