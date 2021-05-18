@@ -80,21 +80,21 @@ basic:
      link: /Funny-Baidu
 
 
-## Background 背景图
-# **************************|*********************************
-# background:               |
-#   link:                   |   图片链接
-#   layout:                 |   样式
-#     repeat:               |   是否重复
-#     attachment:           |   固定 或 随滚动移动
-#     size:                 |   图片大小
-# **************************|*********************************
-  background:
-   link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/1.png
-   layout:
-     repeat: no-repeat
-     attachment: fixed
-     size: 100% 100%
+# ## Background 背景图
+# # **************************|*********************************
+# # background:               |
+# #   link:                   |   图片链接
+# #   layout:                 |   样式
+# #     repeat:               |   是否重复
+# #     attachment:           |   固定 或 随滚动移动
+# #     size:                 |   图片大小
+# # **************************|*********************************
+#   background:
+#    link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/1.png
+#    layout:
+#      repeat: no-repeat
+#      attachment: fixed
+#      size: 100% 100%
 
 
 ## Mathjax 渲染公式
