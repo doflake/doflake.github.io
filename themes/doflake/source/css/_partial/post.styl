@@ -20,6 +20,13 @@ $post-index-title-underline-height = convert(hexo-config("layout.index_post.titl
     max-width: $post-index-max_width;
     margin: 50px;
     background-color: rgb($post-index-background_color);
+
+    box-shadow: 0 0 3px 1px rgba(51,51,51,0.5);
+    transition: 0.3s;
+  }
+
+  .post-index-container:hover {
+    box-shadow: 0 3px 15px 3px rgba(51,51,51,0.5);  
   }
 
   .post-index-banner {

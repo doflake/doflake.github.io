@@ -30,9 +30,9 @@ basic:
   
 ## Info 基本信息
 # **************************|*********************************
-# info:                     |
-#  title:                   |   网页标题
-#  favicon:                 |   网页图标 
+# info:                     |    基本信息 相关
+#  title:                   |    网页标题
+#  favicon:                 |    网页图标 
 # **************************|*********************************
   info:
    title: Doflake
@@ -40,7 +40,7 @@ basic:
 
 ## Card 首页卡片
 # **************************|*********************************
-# card:                     |
+# card:                     |    首页卡片 相关
 #   title:                  |    卡片标题
 #   image:                  |    卡片图片
 #   background-color:       |    背景颜色
@@ -52,6 +52,11 @@ basic:
     background-color: 0,0,0
     text-color: 255,0,255
     
+## Body 背景
+# **************************|*********************************
+# body:                     | 
+#   background-color:       |
+# **************************|*********************************
   body:
     background-color: "#CBCCFF"
        
@@ -79,24 +84,6 @@ basic:
      name: 度娘
      link: /Funny-Baidu
 
-
-# ## Background 背景图
-# # **************************|*********************************
-# # background:               |
-# #   link:                   |   图片链接
-# #   layout:                 |   样式
-# #     repeat:               |   是否重复
-# #     attachment:           |   固定 或 随滚动移动
-# #     size:                 |   图片大小
-# # **************************|*********************************
-#   background:
-#    link: https://cdn.jsdelivr.net/gh/doflake/Picture/Background/1.png
-#    layout:
-#      repeat: no-repeat
-#      attachment: fixed
-#      size: 100% 100%
-
-
 ## Mathjax 渲染公式
 # **************************|*********************************
 # 使用:
@@ -116,40 +103,19 @@ layout:
 
 ## Index_post 主页文章块
 # **************************|*********************************
-# index_post:               |   文章方框
-#   container:              |   文章块
-#     max_width:            |   最大宽度 
-#     left:                 |   左边距
-#     top:                  |   上边距
-#     right:                |   右边距
-#     bottom:               |   下边距
-#     color:                |   底色
-#   border:                 |   边框样式
-#     radius:               |   文章圆角
-#   margin:                 |   边距
-#     first_to_card:         |   第一篇文章 到 Card 的距离
-#   posts:                  |   文章内容
-#     title_color:          |   标题颜色
-#     content_link_color:   |   文章内容中链接颜色 
+# index_post:               |   主页文章块 相关
+#   container:              |   单个容器 相关
+#     left:                 |   离左侧
+#     top:                  |   离上方
+#     max-width:            |   文章最大宽度
+#     background-color:     |   背景颜色
+#   title:                  |   文章标题
+#     color:                |   标题颜色
+#     underline:            |   下划线 相关
+#       under:              |   离文字距离
+#       time:               |   动画总时长
+#       height:             |   下划线粗细
 # **************************|*********************************
-  # index_post:
-  #   container:
-  #     max_width: 960px
-  #     left: 100px
-  #     top: auto
-  #     right: auto
-  #     bottom: auto
-  #     color: 
-  #       default: 12,12,12,9.5
-  #       hover: 12,12,12,1.0
-  #   border:
-  #     radius: 0px
-  #   margin:
-  #     first_to_card: 5px
-  #   posts:
-  #     title_color: "#5C6FDA"
-  #     content_link_color: 255,255,255,0.7
-
     index_post:
       container:
         left: 1vw
@@ -163,7 +129,6 @@ layout:
           time: 0.4s
           height: 2px
       
-    
 # -------------------------------------------------------------------------------------------------- < End Layout >
 
 ####################################################################################################
@@ -175,9 +140,11 @@ meta:
 # **************************|*********************************  
 # totop:                    |   前往顶端
 #   enable:                 |   是否启用
+#   url:                    |   图片地址
 # **************************|*********************************  
   totop: 
     enable: true
+    url: https://cdn.jsdelivr.net/gh/doflake/Picture/ToTop/Rem 100x100.png
 
 ## Clock 时钟
 # **************************|*********************************  
