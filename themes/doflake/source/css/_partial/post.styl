@@ -3,6 +3,8 @@ $post-index-padding_left = convert(hexo-config("layout.index_post.container.left
 $post-index-max_width = convert(hexo-config("layout.index_post.container.max-width"))
 $post-index-background_color = convert(hexo-config("layout.index_post.container.background-color"))
 
+$post-index-margin-bottom = convert(hexo-config("layout.index_post.container.between"))
+
 $post-index-title-color = convert(hexo-config("layout.index_post.title.color"))
 $post-index-title-underline-under = convert(hexo-config("layout.index_post.title.underline.under"))
 $post-index-title-underline-time = convert(hexo-config("layout.index_post.title.underline.time"))
@@ -12,13 +14,18 @@ $post-index-title-underline-height = convert(hexo-config("layout.index_post.titl
 .post-index {
   padding-top: $post-index-padding_top;
   padding-left: $post-index-padding_left;
+
+  width: $post-index-max_width;
 }
 
 .posts {
 
   .post-index-container {
+    border-top-left-radius: 20px;
+
+    margin-bottom: $post-index-margin-bottom;
+
     max-width: $post-index-max_width;
-    margin: 50px;
     background-color: rgb($post-index-background_color);
 
     box-shadow: 0 0 3px 1px rgba(51,51,51,0.5);
@@ -37,6 +44,7 @@ $post-index-title-underline-height = convert(hexo-config("layout.index_post.titl
   }
 
   .post-title {
+    font-family: "Comic Sans MS",'Long Cang',cursive;
     font-size: 1.5em;
     padding-top: 10px;
     padding-left: 20px;
@@ -84,4 +92,45 @@ $post-index-title-underline-height = convert(hexo-config("layout.index_post.titl
     }
   }
 
+}
+
+.post-each {
+  
+  .post-container {
+    max-width: $post-index-max_width;
+    margin: 50px;
+    border-radius: 20px;
+    background-color: rgb($post-index-background_color);
+
+    box-shadow: 0 0 3px 1px rgba(51,51,51,0.5);
+    transition: 0.3s;
+  }
+
+  .post-container:hover {
+    box-shadow: 0 3px 15px 3px rgba(51,51,51,0.5);  
+  }
+
+  .post-title {
+    font-size: 1.5em;
+    font-family: "Comic Sans MS","等线";
+    padding: 3px 0px 3px 0px;
+
+    background-color: rgba(51,51,51,0.2);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    .post-title-link {
+      text-decoration: none;
+
+      position: relative;
+      color: $post-index-title-color;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .post-title-link:hover:before {
+      right: 0;
+      left: 0;  
+    }
+  }
 }

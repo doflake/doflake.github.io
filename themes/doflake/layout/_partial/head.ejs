@@ -22,15 +22,13 @@
         <%- partial('_meta/totop') %>
       <% } %>  
     </div>
-    <div class="theme-meta-clock">
-      <% if (theme.meta.clock.enable) { %> 
-        <%- partial('_meta/clock') %> 
-      <% } %> 
-    </div> 
   </div>
 
   <div class="theme-css">
     <%- css('css/style.css') %>
   </div>
 
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/fireworks.js"></script>
 </div>

@@ -2,6 +2,7 @@ $clock_size = convert(hexo-config("meta.clock.layout.size"))
 $clock_fill = convert(hexo-config("meta.clock.layout.fill"))
 $clock_stroke_width = convert(hexo-config("meta.clock.layout.stroke_width"))
 $clock_animation_duration = hexo-config("meta.clock.layout.time")
+
 .clock_words{
     font-size: $clock_size;
     font-weight: bold;
@@ -32,7 +33,6 @@ $clock_animation_duration = hexo-config("meta.clock.layout.time")
 }
 
 .theme-meta-clock {
-    position: fixed;
-    top: 10px;
-    right: 5px;
+    position: relative;
+    
 }

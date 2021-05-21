@@ -37,6 +37,10 @@ basic:
   info:
    title: Doflake
    favicon: https://cdn.jsdelivr.net/gh/doflake/Picture/Favicon/1.jpg
+  
+  body:
+    background-color: "#CBCCFF"
+    
 
 ## Card 首页卡片
 # **************************|*********************************
@@ -51,14 +55,7 @@ basic:
     image: https://cdn.jsdelivr.net/gh/doflake/Picture/Card/Avatar-Dove.jpg
     background-color: 0,0,0
     text-color: 255,0,255
-    
-## Body 背景
-# **************************|*********************************
-# body:                     | 
-#   background-color:       |
-# **************************|*********************************
-  body:
-    background-color: "#CBCCFF"
+
        
 ## Menu 导航栏
 # **************************|*********************************
@@ -118,9 +115,10 @@ layout:
 # **************************|*********************************
     index_post:
       container:
-        left: 1vw
-        top: 40px
-        max-width: 60vw
+        left: 3vw
+        top: 5vh
+        between: 5vh
+        max-width: 75vw
         background-color: "#FFF5F9"
       title:
         color: "#EC87E4"

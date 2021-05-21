@@ -1,0 +1,22 @@
+$post-index-max_width = convert(hexo-config("layout.index_post.container.max-width"))
+
+.author-index {
+
+    position: sticky;
+    top: 5vh;
+
+    width: 25vw;
+    height: 80vh;
+    background-color: white;
+    margin: 50px;
+    background-color: rgb($post-index-background_color);
+
+    box-shadow: 0 0 3px 1px rgba(51,51,51,0.5);
+    transition: 0.3s;
+    
+    text-align: center;
+}
+
+.author-index:hover {
+     box-shadow: 0 3px 15px 3px rgba(51,51,51,0.5);  
+}

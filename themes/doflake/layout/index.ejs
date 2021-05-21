@@ -1,17 +1,27 @@
 <card><%- partial('_partial/card') %></card>
 
-<div class="post-index">
-  <section class="posts">
-    <% page.posts.each(function (post) { %>
-      <div class="post-index-container">
-        <div class="post-index-banner" style="background-image: url(<%= post.headimg %>);"></div>
-        <div class="post-title">
-          <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+<div class="Main-index">
+  <div class="post-index">
+    <section class="posts">
+      <% page.posts.each(function (post) { %>
+        <div class="post-index-container">
+          <div class="post-index-banner" style="background-image: url(<%= post.headimg %>);"></div>
+          <div class="post-title">
+            <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+          </div>
+          <div class="post-content">
+            <%- post.excerpt %>
+          </div>
         </div>
-        <div class="post-content">
-          <%- post.excerpt %>
-        </div>
-      </div>
-    <% }) %>
-  </section>
+      <% }) %>
+    </section>
+  </div>
+  <div class="author-index">
+    
+    <div class="theme-meta-clock">
+      <% if (theme.meta.clock.enable) { %> 
+        <%- partial('_meta/clock') %> 
+      <% } %> 
+    </div> 
+  </div>
 </div>
