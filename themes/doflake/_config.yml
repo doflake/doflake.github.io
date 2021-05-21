@@ -115,10 +115,10 @@ layout:
 # **************************|*********************************
     index_post:
       container:
-        left: 3vw
+        left: 5vw
         top: 5vh
         between: 5vh
-        max-width: 75vw
+        max-width: 70vw
         background-color: "#FFF5F9"
       title:
         color: "#EC87E4"
@@ -144,22 +144,11 @@ meta:
     enable: true
     url: https://cdn.jsdelivr.net/gh/doflake/Picture/ToTop/Rem 100x100.png
 
-## Clock 时钟
-# **************************|*********************************  
-# clock:                    |   霓虹灯 时钟
-#   enable:                 |   是否启用
-#   layout:                 |   样式
-#     size:                 |   时钟 大小
-#     fill:                 |   时钟 字体颜色
-#     stroke_width:         |   霓虹灯带 宽度
-#     time:                 |   霓虹灯带 走完一次时长
-# **************************|*********************************  
-  clock:
-    enable: true
-    layout:
-      size: 45px
-      fill: "#000000"
-      stroke_width: 3px
-      time: 8
+## Author 作者
+
+  author:
+    avatar:
+      url: https://cdn.jsdelivr.net/gh/doflake/Picture/Author/Avatar/doflake.jpg
+      height:
 
 # -------------------------------------------------------------------------------------------------- < End Meta >

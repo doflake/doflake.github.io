@@ -1,5 +1,5 @@
-$post-index-padding_top = convert(hexo-config("layout.index_post.container.top"))
-$post-index-padding_left = convert(hexo-config("layout.index_post.container.left"))
+$post-index-margin_top = convert(hexo-config("layout.index_post.container.top"))
+$post-index-margin_left = convert(hexo-config("layout.index_post.container.left"))
 $post-index-max_width = convert(hexo-config("layout.index_post.container.max-width"))
 $post-index-background_color = convert(hexo-config("layout.index_post.container.background-color"))
 
@@ -12,8 +12,8 @@ $post-index-title-underline-height = convert(hexo-config("layout.index_post.titl
 
 
 .post-index {
-  padding-top: $post-index-padding_top;
-  padding-left: $post-index-padding_left;
+  margin-top: $post-index-margin_top;
+  margin-left: $post-index-margin_left;
 
   width: $post-index-max_width;
 }
@@ -21,7 +21,7 @@ $post-index-title-underline-height = convert(hexo-config("layout.index_post.titl
 .posts {
 
   .post-index-container {
-    border-top-left-radius: 20px;
+    border-radius: 10px;
 
     margin-bottom: $post-index-margin-bottom;
 
@@ -37,6 +37,7 @@ $post-index-title-underline-height = convert(hexo-config("layout.index_post.titl
   }
 
   .post-index-banner {
+      border-radius: 10px 10px 0px 0px;
       border-bottom: 5px solid #252525;
       height: 250px;
       background-size: cover;

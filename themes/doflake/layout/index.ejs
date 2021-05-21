@@ -16,12 +16,5 @@
       <% }) %>
     </section>
   </div>
-  <div class="author-index">
-    
-    <div class="theme-meta-clock">
-      <% if (theme.meta.clock.enable) { %> 
-        <%- partial('_meta/clock') %> 
-      <% } %> 
-    </div> 
-  </div>
+  <author><%- partial('_meta/author') %></author>
 </div>
