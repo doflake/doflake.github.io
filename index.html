@@ -89,7 +89,23 @@
   <script type="text/javascript" src="/js/fireworks.js"></script>
 </div><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Doflake" type="application/atom+xml">
 </head>
-  <body>
+  <body onload="endLoading()">
+    
+    <loading><div id="loader">
+    <div class="loading-left-bg"></div>
+    <div class="loading-right-bg"></div>
+    <div class="spinner-box">
+        <div class="configure-border-1">
+            <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+            <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+    </div>
+</div></loading>
+    <script src="/js/endLoading.js"></script>
+    
     <div class="container">
       <main class="main">
         <card><div class="card">
@@ -168,49 +184,21 @@
       
     </section>
   </div>
-  <div class="author-index">
-    
-    <div class="theme-meta-clock">
-       
-        <div class="theme-meta-clock">
-    <svg>
-        <text id="time" text-anchor="middle" x="36%" y="60%" class="clock_words clock_words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="60%" class="clock_words clock_words-2"></text>
-    </svg>
-</div>
-
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script> 
-       
-    </div> 
-  </div>
+  <author><div class="author">
+    <div class="author-avatar">
+        <div class="author-avatar-a">
+            <div class="author-avatar-b"></div>
+            <div class="author-avatar-img"></div>
+        </div>
+    </div>
+    <div class="author-title">
+        
+    </div>
+</div></author>
 </div>
 
       </main>
     </div>
+    
   </body>
 </html>

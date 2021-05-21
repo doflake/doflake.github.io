@@ -89,7 +89,23 @@
   <script type="text/javascript" src="/js/fireworks.js"></script>
 </div><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Doflake" type="application/atom+xml">
 </head>
-  <body>
+  <body onload="endLoading()">
+    
+    <loading><div id="loader">
+    <div class="loading-left-bg"></div>
+    <div class="loading-right-bg"></div>
+    <div class="spinner-box">
+        <div class="configure-border-1">
+            <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+            <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+    </div>
+</div></loading>
+    <script src="/js/endLoading.js"></script>
+    
     <div class="container">
       <main class="main">
         <section class="archive">
@@ -129,5 +145,6 @@
 </section>
       </main>
     </div>
+    
   </body>
 </html>
