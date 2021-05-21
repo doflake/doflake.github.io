@@ -73,62 +73,9 @@
       
         <script src="/js/totop.js"></script>
 <script src="/js/jquery.min.js"></script>
-<style>
-    #totop {
-        position: fixed;
-        right: 100px;
-        bottom: 100px;
-        width: 0;
-        height: 0;
-        display: none;
-
-        transition: all 0.3s;
-    }
-
-    #totop:hover {
-        transform: translate(-5px,-5px);
-    }
-</style>
-<div id="totop"><a title="Rem To Top"><img src="https://cdn.jsdelivr.net/gh/doflake/Picture/ToTop/Rem 100x100.png"/></a></div>
+<div id="totop"><a title="🚀To Top🚀"><img src="https://cdn.jsdelivr.net/gh/doflake/Picture/ToTop/Rem 100x100.png"/></a></div>
         
     </div>
-    <div class="theme-meta-clock">
-       
-        <div class="theme-meta-clock">
-    <svg>
-        <text id="time" text-anchor="middle" x="36%" y="60%" class="clock_words clock_words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="60%" class="clock_words clock_words-2"></text>
-    </svg>
-</div>
-
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script> 
-       
-    </div> 
   </div>
 
   <div class="theme-css">
@@ -137,6 +84,9 @@ setInterval(function(){
 
   </div>
 
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/fireworks.js"></script>
 </div><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Doflake" type="application/atom+xml">
 </head>
   <body>
@@ -145,13 +95,17 @@ setInterval(function(){
         <article class="post">
   <script src="/js/highlight.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-  <div class="post-title">
-    <center><p class="post-title-link post-title-size">TEST</p></center>
+
+  <div class="post-each">
+    <div class="post-container">
+      <div class="post-title">
+        <center><p class="post-title-link post-title-size">test</p></center>
+      </div>
+      <div class="post-content">
+        
+      </div>
+    </div>
   </div>
-  <div class="post-content">
-    
-  </div>
-  
 </article>
       </main>
     </div>
