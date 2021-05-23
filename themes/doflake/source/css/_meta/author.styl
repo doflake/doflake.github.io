@@ -2,7 +2,7 @@ $post-index-max_width = convert(hexo-config("layout.index_post.container.max-wid
 $author-avatar-url = hexo-config("meta.author.avatar.url")
 .author {
     position: sticky;
-    display: flex;
+    display: column;
 
     top: 5vh;
     width: 90vw-($post-index-max_width);
@@ -93,9 +93,40 @@ $author-avatar-url = hexo-config("meta.author.avatar.url")
     }
 }
 
+$author-title-color = convert(hexo-config("layout.index_post.title.color"))
+$author-title-underline-under = convert(hexo-config("layout.index_post.title.underline.under"))
+$author-title-underline-time = convert(hexo-config("layout.index_post.title.underline.time"))
+$author-title-underline-height = convert(hexo-config("layout.index_post.title.underline.height"))
+
 .author-title {
     position: relative;
     text-align: center;
     font-size: 2em;
     font-family: "Comic Sans MS",'Long Cang',cursive;
+    
+    text-decoration: none;
+
+    color: $author-title-color;
+    font-weight: bold;
+}
+
+.author-title:before {
+    transition: all $author-title-underline-time ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: $author-title-underline-under;
+    display: block;
+    height: $author-title-underline-height;
+    background-color: $author-title-color;
+    content: '';
+}
+
+.author-title:hover:before {
+    right: 0;
+    left: 0;  
+}
+
+.post-title-size {
+    font-size: 1em;
 }

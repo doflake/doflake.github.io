@@ -35,7 +35,7 @@ basic:
 #  favicon:                 |    网页图标 
 # **************************|*********************************
   info:
-   title: Doflake
+   title: doflake
    favicon: https://cdn.jsdelivr.net/gh/doflake/Picture/Favicon/1.jpg
   
   body:
@@ -51,7 +51,7 @@ basic:
 #   text-color:             |    标题颜色
 # **************************|*********************************
   card:
-    title: 「 Doflake 」
+    title: 「 doflake 」
     image: https://cdn.jsdelivr.net/gh/doflake/Picture/Card/Avatar-Dove.jpg
     background-color: 0,0,0
     text-color: 255,0,255
