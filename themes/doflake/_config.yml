@@ -115,7 +115,7 @@ layout:
 # **************************|*********************************
     index_post:
       container:
-        left: 5vw
+        left: 13vw
         top: 5vh
         between: 5vh
         max-width: 70vw
@@ -150,5 +150,8 @@ meta:
     avatar:
       url: https://cdn.jsdelivr.net/gh/doflake/Picture/Author/Avatar/doflake.jpg
     title: doflake
+    subtitle:
+      txt: Welcome to doflake's blog
+      color: "#0d0d0d"
 
 # -------------------------------------------------------------------------------------------------- < End Meta >
