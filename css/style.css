@@ -222,7 +222,7 @@ table td.code {
   transition: 0.3s;
 }
 .posts .post-index-container:hover {
-  box-shadow: 0 3px 15px 3px rgba(51,51,51,0.5);
+  box-shadow: 0 8px 15px 3px rgba(51,51,51,0.6);
 }
 .posts .post-index-banner {
   border-radius: 10px 10px 0px 0px;
@@ -280,7 +280,7 @@ table td.code {
   transition: 0.3s;
 }
 .post-each .post-container:hover {
-  box-shadow: 0 3px 15px 3px rgba(51,51,51,0.5);
+  box-shadow: 0 8px 15px 3px rgba(51,51,51,0.6);
 }
 .post-each .post-title {
   font-size: 1.5em;
@@ -953,7 +953,10 @@ table td.code {
 .footer {
   margin-top: 12vh;
   background-color: #8c8c8c;
-  box-shadow: 0px 3px 15px 3px rgba(51,51,51,0.5);
+  transition: 0.3s;
+}
+.footer:hover {
+  box-shadow: 0 8px 15px 3px rgba(51,51,51,0.6);
 }
 .footer-text {
   padding-top: 0.5vh;
@@ -983,7 +986,7 @@ table td.code {
   transition: 0.3s;
 }
 .author:hover {
-  box-shadow: 0 3px 15px 3px rgba(51,51,51,0.5);
+  box-shadow: 0 8px 15px 3px rgba(51,51,51,0.6);
 }
 .author-avatar {
   display: flex;
