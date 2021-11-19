@@ -1,15 +1,1 @@
-<article class="post">
-  <script src="/js/highlight.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
-  <div class="post-each">
-    <div class="post-container">
-      <div class="post-title">
-        <center><p class="post-title-link post-title-size"><%= page.title %></p></center>
-      </div>
-      <div class="post-content">
-        <%- page.content %>
-      </div>
-    </div>
-  </div>
-</article>
+<post_article><%- partial('_page/post-article'), {post: page} %></post_article>

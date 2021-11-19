@@ -3,19 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Doflake
-subtitle: Dove|Beelake
-description: 
+title: Hexo
+subtitle: ''
+description: ''
 keywords:
-author: Doflake
-language: zh-CN
+author: John Doe
+language: en
 timezone: ''
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://doflake.github.io/
-root: /
-permalink: :link_c/:link_name/
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: http://example.com
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -29,7 +28,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: baidu_verify_code-Mi3CJD4xMT.html
+skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -50,7 +49,7 @@ highlight:
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: true
+  hljs: false
 prismjs:
   enable: false
   preprocess: true
@@ -97,15 +96,6 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-### RSS
-plugin:
-- hexo-generator-feed
-### Feed Atom
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-
 ## Themes: https://hexo.io/themes/
 theme: doflake
 
@@ -116,32 +106,7 @@ deploy:
   repo: https://github.com/doflake/doflake.github.io.git
   branch: master
 
-
-# Markdown-it config
-## markdown: 'zero' | 'default' | 'commonmark'
-## zero：禁用大多数解析器功能。仅支持斜体和粗体，甚至不支持所有原始Markdown功能。
-## default（GFM）：解析器的行为类似于github规范。
-## commonmark：提供比Zero预设更多的功能。 此设置将强制插件使用最新的CommonMark规范。
-markdown: commonmark
-
-# MathJax Support
-mathjax:
-  enable: true
-  per_page: false
-  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-
-kramed:
-  gfm: true
-  pedantic: true
-  sanitize: true
-  tables: true
-  breaks: true
-  smartLists: true
-  smartypants: true
-
-# Sitemap
-sitemap:
-  path: sitemap.xml
-
-baidusitemap:
-  path: baidusitemap.xml
+# Local Search
+search:
+  path: search.xml
+  field: post

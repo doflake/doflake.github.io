@@ -1,23 +1,8 @@
-<card><%- partial('_partial/card') %></card>
+<alert><%- partial('_common/alert', {index_welcome: theme.alert.index_welcome.enable}) %></alert>
+<div class="head-card">
 
-<div class="Main-index">
-  <div class="post-index">
-    <section class="posts">
-      <% page.posts.each(function (post) { %>
-        <div class="post-index-container">
-          <div class="post-index-banner" style="background-image: url(<%= post.headimg %>);"></div>
-          <div class="post-title">
-            <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
-          </div>
-          <div class="post-content">
-            <%- post.excerpt %>
-          </div>
-        </div>
-      <% }) %>
-    </section>
-  </div>
-  
-  <author><%- partial('_meta/author') %></author>
 </div>
-
-<footer><%- partial('_partial/footer') %></footer>
+<div class="body-main">
+    <%- partial('_page/post-index') %>
+    <%- partial('_page/aside') %>
+</div>

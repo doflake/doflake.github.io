@@ -4,8 +4,6 @@ function backToTop(){
     });
 }
 window.onscroll = function(){
-    var scrollTop = this.document.documentElement.scrollTop || this.document.body.scrollTop;
-    var totopBtn = this.document.getElementById("totop");   
-    totopBtn.style.display="inline";
+	var totopBtn = this.document.getElementById("totop");
     totopBtn.addEventListener('click',this.backToTop,false);
 }

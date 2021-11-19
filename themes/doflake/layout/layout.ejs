@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="<%- config.root %>font\font-awesome-4.7.0\css\font-awesome.min.css">
-  <head><%- partial('_partial/head') %></head>
-  <body>
-    <div class="container">
-      <main class="main">
-        <%- body %>
-      </main>
-    </div>
+  <head><%- partial('_common/head') %></head>
+  <body class="mdui-appbar-with-toolbar body-container">
+    <nav><%- partial('_common/navigation-bar') %></nav>
+    <fab><%- partial('_common/fab') %></fab>
+    <%- body %>
+    <footer><%- partial('_common/footer') %></footer>
   </body>
 </html>
