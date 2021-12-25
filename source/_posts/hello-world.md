@@ -1,12 +1,14 @@
 ---
 title: Hello World
-avatar: https://cdn.jsdelivr.net/gh/doflake/Picture/Card/Avatar-Dove.jpg 
-signature: 咕咕
-link:
-headimg: 
+author:
+  avatar: https://cdn.jsdelivr.net/gh/doflake/Picture/Card/Avatar-Dove.jpg
+  writer: Dove
+  talk: 咕咕
+  link: https://doflake.github.io
+headimg: https://cdn.jsdelivr.net/gh/doflake/cdn/Photo/Headimg.webp
 tag:
-- text
-- aaaaaa
+- Test-tag-A
+- Test-tag-B
 ---
 # H1
 

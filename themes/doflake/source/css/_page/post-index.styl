@@ -4,164 +4,161 @@
     width: calc(100% - 240px);
 }
 
-@media screen and (max-width: 768px) {
-    .post-index-container {
-        width: 100%;
-        margin-right: 0px;
-    }
-}
-
 .post-index-card {
     margin-bottom: 40px;
-    background-color: #fff;
+    background-color: var(--color-post-background);
 
-    div[class=placeholder-1] {
+    .placeholder-1, .placeholder-2 {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         height: 60px;
         width: 100%;
     }
 
-    div[class=placeholder-2] {
+    .placeholder-2 {
+        height: 20px;
+    }
+
+    .readmore {
+        position: relative;
+        bottom: 20px;
+        left: -5px;
+        padding: 3px 10px;
+        width: var(--size-readmore-w);
+        height: var(--size-readmore-h);
+        background-color: var(--color-post-readmore);
+        display: flex;
+        -webkit-box-shadow:0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12)!important;
+        box-shadow:0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12)!important
+        align-items: center;
+        transition: width 0.3s ease-in-out;
+        -webkit-transition: width 0.3s ease-in-out;
+
+        &:hover {
+            width: calc(var(--size-readmore-w) + 20px);
+        }
+
+        &:after {
+            position: absolute;
+            right: 25px;
+            content: "Read More";
+            color: var(--color-invert-1);
+            font-weight: bold;
+        }
+    }
+
+    .headimg {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        height: 20px;
+        height: 250px;
         width: 100%;
+        overflow: hidden;
+
+        img {
+            z-index: -1;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            transition: 2s all ease-in-out;
+            
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 
-    button[target=readmore] {
-        background-color: #9049ff;
-        margin-top: 15px;
+    .author {
         position: relative;
-        left: -5px;
-        top: -20px;
-    }
-}
+        height: 30px;
+        padding: 10px 0px 0px 0px;
 
-.post-index-card:nth-child(1) {
-    margin-top: 40px;
-}
+        img {
+            position: absolute;
+            left: 30px;
+            top: -50px;
+            width: 80px;
+            border-radius: 40px;
+        }
 
-.post-index-headimg {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 250px;
-    width: 100%;
-    overflow: hidden;
+        .info {
+            position: absolute;
+            left: 120px;
+            top: 10px;
 
-    img {
-        z-index: -1;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        transition: 2s all ease-in-out;
-    }
+            a[class=name] {
+                color: var(--color-post-author-name);
+                font-size: 20px;
+                font-weight: bold;
+            }
 
-    img:hover {
-        transform: scale(1.1);
-    }
-}
+            a[class=signature] {
+                color: var(--color-post-signature);
+                font-size: 14px;
+            }
+        }
+        .tag {
+            position: absolute;
+            right: 10px;
+            top: 20px;
 
-@media screen and (max-width: 768px) {
-    .post-index-headimg {
-        height: 230px;
-    }
-}
+            a {
+                text-decoration: none;
 
-@media screen and (max-width: 600px) {
-    .post-index-headimg {
-        height: 180px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .post-index-headimg {
-        height: 150px;
-    }
-}
-
-.post-index-author-wrapper {
-    position: relative;
-    height: 30px;
-    padding-bottom: 10px;
-
-    img {
-        position: absolute;
-        left: 30px;
-        top: -50px;
-        width: 80px;
-        border-radius: 40px;
-    }
-}
-
-.post-index-author-info {
-    position: absolute;
-    left: 120px;
-    top: 10px;
-
-    .signautre {
-        color: #FFFFFF;
-        font-size: 14px;
-    }
-}
-
-.post-index-content {
-    margin-left: 20px;
-
-    a[class=cut] {
-        color: var(--color-accent);
-        font-weight: bold;
-        font-size: 40px;
+                &:after {
+                    content: '\00A0';
+                }
+            }
+        }
     }
 
-    a[target=title] {
-        font-size: 2em;
-        font-weight: bold;
-        color: var(--color-post-index-title);
-    }
-    
-    a[target=title]::before {
-        background-color: var(--color-post-index-title);
+   
+
+    .content {
+        margin-left: 20px;
+        padding-bottom: var(--size-readmore-h);
+
+        a[target=title] {
+            position: relative;
+            left: 5px;
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--color-post-title);
+
+            transition: left 0.3s ease-in-out;
+
+            &:hover {
+                left: 8px;
+            }
+
+            &:hover:before {
+                left: -20px;
+            }
+
+            &:before {
+                content: '|';
+                left: -15px;
+                top: -8px;
+                color: var(--color-post-titlecut);
+                font-weight: bold;
+                font-size: 40px;  
+                
+            }
+        }
+
+        .text {
+            font-size: 1em;
+        }
     }
 
-    div[class=text] {
-        font-size: 1em;
+    &:nth-child(1) {
+        margin-top: 40px;
     }
+
 }
 
 
 
-.post-index-tag-a {
-    text-decoration: none;
-}
-
-.post-index-tag {
-    position: absolute;
-    right: 0px;
-    top: 10px;
-}
-
-@media screen and (max-width: 600px) {
-    .post-index-tag {
-        display: none;
-    }
-}
-
-.post-index-readmore {
-    i[class=button] {
-        font-style: normal;
-        text-transform: none;
-        font-family: 'Noto Serif SC';
-        font-size: 16px;
-        color: white;
-    }
-    
-    i[class=icon] {
-        position: relative;
-        top: -1px;
-    }
-}

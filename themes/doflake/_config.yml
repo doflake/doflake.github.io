@@ -8,10 +8,12 @@
 info:
 
 # ================================================================================================== 
-# < HeadCard > 顶图
+# < indexcard > 顶图
 # ================================================================================================== 
-headcard:
-  src: https://cdn.jsdelivr.net/gh/doflake/Picture/HeadCard/Headcard-1.png
+indexcard:
+  src: https://cdn.jsdelivr.net/gh/doflake/cdn/Photo/IndexCard-1.webp
+  avatar: # 不填写则默认与 Aside 中的 avatar 一致
+  title: doflake
 
 # ================================================================================================== 
 # < aside > 侧边栏

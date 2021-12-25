@@ -1,0 +1,73 @@
+.index-card {
+    width: 100%;
+    height: 100vh;
+
+    .photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        animation-timing-function: ease-in-out;
+        animation-name: FadeIn;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+    }
+
+    .Canvas {
+        position: absolute;
+        top: 0px;
+    }
+
+    .down-button {
+        width: 100%;
+        height: 64px;
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        box-shadow: 0 -50px 50px 0 var(--color-body) inset;
+    }
+}
+
+.card-down-button {
+    z-index: 999;
+    color: #fff;
+    font-size: 24px;
+    line-height: 64px;
+    position: absolute;
+    width: 24px;
+    left: calc(50% - 12px);
+    text-shadow: 0 1px 2px #000;
+    -webkit-animation: scroll-up-down 1.6s linear infinite;
+    animation: scroll-up-down 1.6s linear infinite;
+}
+
+.index-card-avatar-container {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: calc(50% - 15% - 100px);
+    text-align: center;
+
+    .avatar {
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2) , 0 6px 20px 0 rgba(0, 0, 0, .19);
+    }
+
+    .title {
+        color: var(--color-body-invert);
+        text-shadow: 2px 2px 5px var(--color-body);
+        font-size: 3em;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}

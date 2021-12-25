@@ -6,12 +6,6 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
-    .aside-container {
-        display: none;
-    }
-} 
-
 .aisde-item {
     width: 100%;
     position: relative;
@@ -25,7 +19,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: white;
+    background-color: var(--color-aside);
     overflow: hidden;
 }
 
@@ -56,16 +50,14 @@
     top: -45px;
     font-size: 2em;
     font-weight: bold;
-    color: var(--color-post-index-title);
-}
-.aside-author-title::before {
-    background-color: var(--color-post-index-title);
+    color: var(--color-aside-title);
+    text-decoration: none;
 }
 
 .aside-author-subtitle {
     position: relative;
     top: -35px;
-    color: var(--color-subtitle);
+    color: var(--color-aside-subtitle);
 }
 
 .aside-author-social {
@@ -84,7 +76,7 @@
 
     a {
         text-decoration: none; 
-        color: #505050; 
+        color: var(--color-aside-social-item-a); 
         font-size: 1.2em;
     }
 }
@@ -97,6 +89,6 @@
 }
 
 .aside-author-social-name {
-    color: #999;
+    color: var(--color-aside-social-item-a);
     font-size: 0.8125em;
 }

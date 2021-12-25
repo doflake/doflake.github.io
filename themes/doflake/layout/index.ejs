@@ -1,15 +1,5 @@
 <alert><%- partial('_common/alert', {index_welcome: theme.alert.index_welcome.enable}) %></alert>
-<div class="head-card">
-    <img src="<%= theme.headcard.src%>" class="photo">
-    <div class="vague"></div>
-    <div class="Canvas">
-        <canvas id="bubble"></canvas>
-        <script src="js/bubble.js"></script>
-    </div>
-    <div class="down-button">
-        <a class="fa fa-chevron-down card-down-button" href="#body"></a>
-    </div>
-</div>
+<%- partial('_page/card') %>
 <div class="body-main">
     <a name="body"></a>
     <%- partial('_page/post-index') %>
