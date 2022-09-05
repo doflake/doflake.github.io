@@ -71,39 +71,48 @@
         }
     }
 
-    .author {
+    .wrap {
         position: relative;
         height: 30px;
+        width: 100%;
         padding: 10px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
 
-        img {
-            position: absolute;
-            left: 30px;
-            top: -50px;
-            width: 80px;
-            border-radius: 40px;
-        }
-
-        .info {
-            position: absolute;
-            left: 120px;
-            top: 10px;
-
-            a[class=name] {
-                color: var(--color-post-author-name);
-                font-size: 20px;
-                font-weight: bold;
+        .author {
+            width: 30%;
+            height: 100%;
+            overflow: hidden;
+            img {
+                position: absolute;
+                left: 30px;
+                top: -50px;
+                width: 80px;
+                border-radius: 40px;
             }
 
-            a[class=signature] {
-                color: var(--color-post-signature);
-                font-size: 14px;
+            .info {
+                position: absolute;
+                left: 120px;
+                top: calc(50% - 5px);
+
+                a[class=name] {
+                    color: var(--color-post-author-name);
+                    font-size: 20px;
+                    font-weight: bold;
+                }
             }
         }
+
         .tag {
+            width: 60%;
+            height: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             position: absolute;
             right: 10px;
-            top: 20px;
+            top: 50%;
 
             a {
                 text-decoration: none;

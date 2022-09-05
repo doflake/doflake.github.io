@@ -1,7 +1,92 @@
 <alert><%- partial('_common/alert', {index_welcome: theme.alert.index_welcome.enable}) %></alert>
-<%- partial('_page/card') %>
+
+<div class="index-card">
+    <img src="<%= theme.indexcard.src %>" class="photo">
+    <div class="vague"></div>
+    <div class="Canvas">
+        <canvas id="bubble"></canvas>
+        <script src="js/bubble.js"></script>
+    </div>
+    <div class="index-card-avatar-container">
+        <% if (theme.indexcard.avatar || theme.aside.author.avatar) { %>
+            <img src="<%= theme.indexcard.avatar || theme.aside.author.avatar %>" class="avatar">
+        <% } %>
+        <% if (theme.indexcard.title) { %>
+            <p class="title"><%= theme.indexcard.title %></p>
+        <% } %>  
+    </div>  
+    <div class="down-button">
+        <a class="fa fa-chevron-down card-down-button" href="#body"></a>
+    </div>
+</div>
+
 <div class="body-main">
     <a name="body"></a>
-    <%- partial('_page/post-index') %>
-    <%- partial('_page/aside') %>
+    <div class="post-index-container">
+        <section class="posts">
+          <% page.posts.each(function (post) { %>
+            <div class="card post-index-card">
+              <% if ( post.headimg ) { %>
+              <div class="headimg"> 
+                <img src="<%= post.headimg %>" onclick="location.href='<%- url_for(post.path) %>';"></img>
+              </div>
+              <% } %>  
+              <div class="wrap">
+                <div class="author">
+                    <img class="avatar-round" src="<%= post.author.avatar %>"></img>
+                    <div class="info">
+                    <a class="name"><%= post.author.writer %></a>
+                    </div>
+                </div>
+                <div class="tag text">
+                    <% post.tags.each(function (tag) { %>
+                    <a href="<%= tag.path %>" target="_blank">
+                      <i class="fa fa-tag"></i> <%= tag.name %> (<%= tag.length %>)
+                    </a>
+                    <% }) %>
+                  </div>
+              </div>
+             
+              <hr class="fa fa-scissors"></hr>
+              <div class="content">
+                <a target="title" class="link" href="<%= post.path %>" ><%= post.title %></a>
+                <div class="text"> <%- post.excerpt || post.content %> </div>
+              </div>
+              <div class="readmore hvr-float-left" onclick="location.href='<%= post.path %>';"></div>
+            </div>
+          <% }) %>
+        </section>
+    </div>
+
+    <div class="aside-container">
+        <div class="aside-item aside-author-container card">
+            <div class="aside-author-avatar-background card-radius">
+                <img src="<%= theme.aside.author.avatar %>" onclick="location.href='/about';">
+            </div> 
+            <img src="<%= theme.aside.author.avatar %>" class="aside-author-avatar avatar-round" onclick="location.href='/about';"> 
+            <a class="aside-author-title" href="/about" target="title"><%= theme.aside.author.title %></a>
+            <div class="aside-author-subtitle"><%= theme.aside.author.subtitle %></div>
+            <hr style="position: relative; top: -35px;">
+            <div class="aside-author-social">
+                <div class="aside-author-social-item">
+                    <a href="/archives/">
+                    <span class="aside-author-social-num"><%= site.posts.length %></span>
+                    <span class="aside-author-social-name">日志</span>
+                    </a>
+                </div>
+                <div class="aside-author-social-item">
+                    <a href="/categories/">
+                    <span class="aside-author-social-num"><%= site.categories.length %></span>
+                    <span class="aside-author-social-name">分类</span>
+                    </a>
+                </div>
+                <div class="aside-author-social-item">
+                    <a href="/tags/">
+                    <span class="aside-author-social-num"><%= site.tags.length %></span>
+                    <span class="aside-author-social-name">标签</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
