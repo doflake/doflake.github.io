@@ -7,15 +7,14 @@
 }
 
 h1:before, h2:before, h3:before, h4:before, h5:before, h6:before {
-    content: '\f863';
-    -webkit-animation: avatar_turn_around 1s linear infinite;
-    -moz-animation: avatar_turn_around 1s linear infinite;
-    -o-animation: avatar_turn_around 1s linear infinite;
-    -ms-animation: avatar_turn_around 1s linear infinite;
-    animation: avatar_turn_around 1s linear infinite;
+    content: '\f292';
+    color: #f47466;
+    line-height: 1;
+    animation: turn_around 1s linear infinite;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: "Font Awesome 5 Free";
     color: var(--color-h);
 }
 
@@ -67,6 +66,74 @@ a[target=_blank] {
         color: var(--color-blank-2);
     }
 }
+
+p {
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+s {
+    text-decoration-color: var(--color-line-through);
+    text-decoration-style: dashed;
+    text-decoration-thickness: .2em;
+
+    &:before, &:after  {
+        content: "\00A0";
+    }
+}
+
+u {
+    text-decoration-color: var(--color-decoration);
+    text-decoration-style: dashed;
+    text-decoration-thickness: .2em;
+
+    &:before, &:after  {
+        content: "\00A0";
+    }
+}
+
+section.footnotes {
+
+    &:before {
+        content: 'Footnotes';
+        left: -15px;
+        top: -8px;
+        color: var(--color-footnotes);
+        font-weight: bold;
+        font-size: 2em;  
+    }
+
+    .footnote-ref 
+    {
+
+    }
+}
+
+
+// .hint--bottom:before {
+//   margin-top: -11px; }
+
+// .hint--bottom:before, .hint--bottom:after {
+//   top: 100%;
+//   left: 50%; }
+
+// .hint--bottom:before {
+//   left: calc(50% - 6px); }
+
+// .hint--bottom:after {
+//   -webkit-transform: translateX(-50%);
+//   -moz-transform: translateX(-50%);
+//   transform: translateX(-50%); }
+
+// .hint--bottom:hover:before {
+//   -webkit-transform: translateY(8px);
+//   -moz-transform: translateY(8px);
+//   transform: translateY(8px); }
+
+// .hint--bottom:hover:after {
+//   -webkit-transform: translateX(-50%) translateY(8px);
+//   -moz-transform: translateX(-50%) translateY(8px);
+//   transform: translateX(-50%) translateY(8px); }
 
 .text {
     color: var(--color-text);

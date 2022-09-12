@@ -1,36 +1,52 @@
-@media screen and (max-width: 768px) {
-    .post-index-container {
-        width: 100%;
-        margin-right: 0px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .post-index-headimg {
-        height: 230px;
-    }
-}
-
+/* 极小屏幕 （手机，小于600px） */
 @media screen and (max-width: 600px) {
     .post-index-headimg {
         height: 180px;
     }
+
+    .post-index-card > .wrap > .tag
+    {
+        display: none;    
+    }
 }
 
-@media screen and (max-width: 425px) {
+/* 超小屏幕（手机，小于 768px） */
+@media screen and (max-width: 768px)
+{
+    .post-index-container {
+        width: 100%;
+        margin-right: 0px;
+    }
+
     .post-index-headimg {
-        height: 150px;
+        height: 230px;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .post-index-tag {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .aside-container {
         display: none;
     }
-} 
+
+    .body-main {
+        width: 80%;
+    }
+
+}
+
+ /* 小屏幕（平板，大于等于 768px） */
+@media screen and (min-width: 768px)
+{
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media screen and (min-width: 992px)
+{
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px）*/
+@media screen and (min-width: 1200px)
+{
+
+}
+
