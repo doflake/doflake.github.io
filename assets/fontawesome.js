@@ -1,0 +1,1 @@
+document.write('<link rel="stylesheet" href="/assets/all.min.css">');
